@@ -1,0 +1,75 @@
+extends ./pug/layouts/main.pug
+block content
+    header.header
+        img(src="#", alt="Логотип,")
+        nav.main-navigation
+            ul.main-navigation__list 
+                li.main-navigation__item 
+                    a(href="").main-navigation__link Цены на услуги
+                li.main-navigation__item 
+                    a(href="").main-navigation__link О компании
+                li.main-navigation__item 
+                    a(href="").main-navigation__link Отзывы
+                li.main-navigation__item 
+                    a(href="").main-navigation__link Контакты
+        select(name="area")
+            option(value="moscow") Moсква и Подмосковье
+            option(value="moscow6") Moсква и Подмосковье
+            option(value="mosco6w") Moсква и Подмосковье
+            option(value="mosco6w") Moсква и Подмосковье
+            option(value="mosco6w") Moсква и Подмосковье
+        button(type="button").main-navigation__toogler кнопка
+    main.main 
+        section.hero
+            h1.hero__title Ремонт бытовой техники
+            p.hero__text Быстро и просто
+            img(src="#", alt="мужчина с кружкой кофе в руках.")    
+            .hero__buttons
+                a(href="#") Позвонить
+                a(href="#") WhatsApp
+        section.service 
+            h2.service__title Чем мы поможем?
+            p.service__text Приоритетным направлением деятельности нашей специализированной компании является ремонт бытовой техники на дому.
+            ul.service__list
+                li.service__item 
+                    article.service-card 
+                        h3.service-card__title Ремонт стиральных машин
+                        ul.service-card__list
+                            li.service-card__item Не сливает  
+                            li.service-card__item Долго стирает 
+                            li.service-card__item Протекает
+                            li.service-card__item Не влючается 
+                            li.service-card__item Не отжимает
+                            li.service-card__item Сильно шумит
+                        img(src="#", alt="Стиральная машина.")    
+                        a(href="").service-card__link Подробнее
+                    article.service-card 
+                        h3.service-card__title Ремонт холодильников
+                        ul.service-card__list
+                            li.service-card__item Не морозит
+                            li.service-card__item Вода внутри
+                            li.service-card__item Гудит и шумит
+                            li.service-card__item Не холодит
+                            li.service-card__item Не отключается
+                            li.service-card__item Намерзает лёд
+                        img(src="#", alt="Холодильник.")    
+                        a(href="").service-card__link Подробнее
+                        article.service-card 
+                            h3.service-card__title Ремонт посудомоечных машин
+                            ul.service-card__list
+                                li.service-card__item Плохо моет
+                                li.service-card__item Не сливает
+                                li.service-card__item Не набирает
+                                li.service-card__item Течёт
+                                li.service-card__item Отключается
+                                li.service-card__item Не светится
+                            img(src="#", alt="Посудомоечная машина.")    
+                            a(href="").service-card__link Подробнее
+        section.area 
+            h2.area__title 
+            p.area__text
+            .area__description 
+                h3.area__description-title 
+                p.area__description-text 
+                img(src="#", alt="Рулетка.")
+                div.area__map
