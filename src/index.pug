@@ -90,7 +90,9 @@ block content
             .reviews__title Что о нас говорят?
             .reviws__text Нам доверили свою технику более 10 тыс. жителей Москвы и Подмосковья, и большинство остались довольным нашими услугами.
             .reviews__grid 
+                - var values = [1, 2, 3 ,4]
                 .reviews__letters-list
-                    .reviews__letters-list-item
-                        img(src="#", alt="").revies
-                             
+                    each vail in values
+                        .reviews__letters-list-item
+                            img(src="#", alt="").reviews
+                            p = val 
