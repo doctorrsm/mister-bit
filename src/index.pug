@@ -66,10 +66,31 @@ block content
                             img(src="#", alt="Посудомоечная машина.")    
                             a(href="").service-card__link Подробнее
         section.area 
-            h2.area__title 
-            p.area__text
+            h2.area__title Как быстро приедем?
+            p.area__text У нас довольно обширный штат мастеров в Москве и Московской области, что бы точнее вас соорентировать воспользуйтесь картой.
             .area__description 
-                h3.area__description-title 
-                p.area__description-text 
+                h3.area__description-title КАРТА ОБСЛУЖИВАНИЯ
+                p.area__description-text Введите ваш адрес, и узнайте где ближайший наш мастер. И рассчет время прибытия. 
                 img(src="#", alt="Рулетка.")
                 div.area__map
+                    form.area__form(action="/") 
+                        input(type="email").area__input
+                        button(type="submit").area__submit
+        section.masters 
+            h2.masters__title Хорошие мастера у нас?
+            p.masters__text Наши жесткие критерии отбора мастеров позволяют держать качество ремонта на высшем уровне и оставлять гарантию.     
+            .masters__slider 
+                .masters__slider-wrapper 
+                    .masters__slider-item 
+                        article.masters-card 
+                            h3.masters-card__name 
+                            p.masters-card__experience 
+                            blockquote.masters-card__quote 
+        section.reviews 
+            .reviews__title Что о нас говорят?
+            .reviws__text Нам доверили свою технику более 10 тыс. жителей Москвы и Подмосковья, и большинство остались довольным нашими услугами.
+            .reviews__grid 
+                .reviews__letters-list
+                    .reviews__letters-list-item
+                        img(src="#", alt="").revies
+                             
